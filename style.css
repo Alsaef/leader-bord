@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Libre+Baskerville&display=swap');
+body{
+    font-family: 'Asap', sans-serif;
+    background-color:#F3F1FF;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.continner{
+    background-color: white;
+    width: 870px;
+    padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
+}
+.top-players{
+    margin-bottom: 21px;
+}
+.top-players-title {
+    color: #562EFF;
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: 3px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:29px;
+   
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player-name{
+   margin-left: 16px;
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
+   
+}
+/* top bloogs styles */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 26px;
+    grid-column-gap: 79px;
+    
+}
+.blog{
+    display: flex;
+}
+.blog .thsmbl img{
+    width: 177px;
+    height: 117px;
+}
+.blog-info,.bloog-title,.shorts{
+   margin-left: 16px;
+}
+.blog-title{
+    font-size: 20px;
+}
+.shorts{
+    color:  #9F9F9F;
+    font-size: 16px;
+}
+.shorts a{
+    color: #562EFF;
+    font-size: 16px;
+    text-decoration: none;
+}
+/* our courses style */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 24px;
+}
+.course{
+    width: 252.42px;
+    border-radius: 5px;
+    box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+    padding: 13px;
+}
+.course-banner img{
+    width: 224px;
+height: 104px;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.course-athor{
+    color: red;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.feild{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color: #AEAEAE;
+}
+.fa-clock{
+ color: red;
+}
+.course-duration{
+    color: red;
+    background-color: rgb(252, 190, 190);
+    padding: 5px;
+    border-radius: 15px;
+}
+/* this is our small device style media quary */
+@media only screen and (max-width:688px){
+    .continner{
+        width: 100%;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .player,.blog{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+   
+        .courses{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            justify-items: center;
+        }    
+}
+/* tablet device media quary */
+@media only screen and (min-width:688px) and (max-width:992px){
+    .continner{
+        width: 100%;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(2,1fr); 
+    }
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr); 
+        justify-items: center;
+    }
+    .blog{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .courses{
+        display: grid;
+        grid-template-columns: repeat(1,1fr); 
+        justify-items: center;
+    }
+}
